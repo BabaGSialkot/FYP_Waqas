@@ -4,7 +4,7 @@ import joblib
 
 # Load models
 clf = joblib.load('classifier_model.pkl')
-regressor_pipe = joblib.load('regressor_model.pkl')
+regressor_pipe = joblib.load('xgboost_model.pkl')
 
 # Define function to predict location
 def predict_location(bath, balcony, total_sqft_int, bhk):
